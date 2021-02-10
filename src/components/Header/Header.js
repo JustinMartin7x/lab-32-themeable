@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../state/ThemeContext';
 
 export default function Header() {
-  const { setThemeMode, themeMode, mode } = useContext(ThemeContext);
+  const { setThemeMode, themeMode } = useContext(ThemeContext);
 
   const toggleTheme = () => {
-    if (themeMode === 'lightTheme') {
-      setThemeMode('darkTheme');
-    } else setThemeMode('lightTheme');
+    if (themeMode === 'lightTheme') setThemeMode('darkTheme');
+    else setThemeMode('lightTheme');
   };
 
   return (

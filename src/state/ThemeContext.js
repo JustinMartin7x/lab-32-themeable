@@ -6,7 +6,7 @@ const ThemeProvider = ({ children }) => {
   const [themeMode, setThemeMode] = useState('lightTheme');
 
   const mode = styles[themeMode];
-  const value = { setThemeMode, themeMode, mode };
+  const value = { setThemeMode, themeMode };
 
   return (
     <ThemeContext.Provider style={mode} value={value}>
