@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Detail Page will render a Detail page that consists of an image 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="character image"
+      src="some text"
+    />
+  </div>
+</DocumentFragment>
+`;
